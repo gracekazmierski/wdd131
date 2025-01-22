@@ -3,7 +3,6 @@ body {
     font-family:'Times New Roman', Times, serif;
     align-items: left;
     line-height: 1rem;
-
 }
 p {
     text-align:left;
@@ -31,11 +30,11 @@ img {
 }
 .title {
     margin-top:5rem;
-    margin-bottom:3rem;
+    margin-bottom:2.5rem;
     line-height: 1rem;
     letter-spacing: 0.175rem;
     text-align: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid lightgrey;
 }
 h2 {
     font-size: smaller;
@@ -50,4 +49,11 @@ h2 {
 body.light {
     background-color:white;
     color:black;
+}
+.container {
+    border: 1px solid grey;
+    margin-left:25%;
+    margin-right:25%;
+    padding-top:1rem;
+    padding-bottom:5rem;
 }

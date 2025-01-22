@@ -11,9 +11,14 @@ header {
 button {
     display:block;
     margin: 0 auto;
-    cursor: pointer;
     align-items: center;
 }
 button:hover {
     background-color: powderblue;
+}
+footer {
+    padding:2rem;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
 }
