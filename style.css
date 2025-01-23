@@ -12,6 +12,7 @@ button {
     display:block;
     margin: 0 auto;
     align-items: center;
+    
 }
 button:hover {
     background-color: powderblue;
@@ -21,4 +22,7 @@ footer {
     display:block;
     margin: 0 auto;
     text-align: center;
+}
+a {
+    padding:0.5rem;
 }
