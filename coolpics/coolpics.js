@@ -2,7 +2,7 @@ document.querySelector('.gallery').addEventListener('click', viewHandler);
 const menuButton = document.querySelector(".menuButton");
 const dropdown = document.querySelector(".dropdown");
 function toggleMenu() {
-  dropdown.classList.toggle("show"); // Toggle the visibility of the dropdown
+  dropdown.classList.toggle("show"); 
 }
 
 menuButton.addEventListener("click", toggleMenu);
