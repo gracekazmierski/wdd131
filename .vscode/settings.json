@@ -1,3 +1,28 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[less]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,   // Auto-format on save
+    "prettier.printWidth": 100,    // Wrap lines at 100 characters
+    "prettier.tabWidth": 4,        // Use 4 spaces per tab
+    "prettier.useTabs": false,      // Use spaces instead of tabs
+    "prettier.trailingComma": "es5", // Add trailing commas where valid
+    "prettier.singleQuote": true,   // Use single quotes for consistency
+    "prettier.bracketSpacing": true // Add spaces inside object brackets
 }

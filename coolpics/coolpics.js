@@ -1,26 +1,25 @@
 document.querySelector('.gallery').addEventListener('click', viewHandler);
-const menuButton = document.querySelector(".menuButton");
-const dropdown = document.querySelector(".dropdown");
+const menuButton = document.querySelector('.menuButton');
+const dropdown = document.querySelector('.dropdown');
 function toggleMenu() {
-  dropdown.classList.toggle("show"); 
+    dropdown.classList.toggle('show');
 }
 
-menuButton.addEventListener("click", toggleMenu);
+menuButton.addEventListener('click', toggleMenu);
 
-menuButton.addEventListener("click", toggleMenu);
-
+menuButton.addEventListener('click', toggleMenu);
 
 function viewHandler(event) {
     const clickedElement = event.target;
     if (clickedElement.tagName.toLowerCase() === 'img') {
-        const srcElements = clickedElement.src.split("-");
+        const srcElements = clickedElement.src.split('-');
         const newSrc = `${srcElements[0]}-full.jpeg`;
 
         const text = viewerTemplate(newSrc, clickedElement.alt);
-        document.body.insertAdjacentHTML("afterbegin", text);
+        document.body.insertAdjacentHTML('afterbegin', text);
 
-        const closeButton = document.querySelector(".close-viewer");
-        closeButton.addEventListener("click", closeViewer);
+        const closeButton = document.querySelector('.close-viewer');
+        closeButton.addEventListener('click', closeViewer);
     }
 }
 
@@ -39,13 +38,13 @@ function closeViewer(event) {
 }
 
 function handleResize() {
-    const menu = document.querySelector(".menu");
+    const menu = document.querySelector('.menu');
     if (window.innerWidth > 1000) {
-      menu.classList.remove("hide");
+        menu.classList.remove('hide');
     } else {
-      menu.classList.add("hide");
+        menu.classList.add('hide');
     }
-  }
-  
-  handleResize();
-  window.addEventListener("resize", handleResize);
+}
+
+handleResize();
+window.addEventListener('resize', handleResize);
