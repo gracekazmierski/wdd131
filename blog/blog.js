@@ -44,7 +44,7 @@ const articles = [
         imgSrc: 'https://cdn10.bigcommerce.com/s-g9n04qy/products/814705/images/837353/41rEzPpk4cL._SL1350___82557.1687809255.500.500.jpg?c=2',
         imgAlt: 'Book cover for The Hunger Games',
         ages: '12-18',
-        genre: 'Dystopian',
+        genre: 'Dystopian Fiction',
         stars: '⭐⭐⭐⭐⭐',
     },
 ];
