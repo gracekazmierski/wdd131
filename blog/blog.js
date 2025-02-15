@@ -49,7 +49,7 @@ const articles = [
     },
 ];
 
-const bookEntries = document.querySelector('#book-entries');
+const bookEntries = document.querySelector('.book-entries');
 function genArticleHTML(article) {
     return `
         <div class="book-container">

@@ -30,7 +30,7 @@ nav a {
   color: #af1b3f;
   font-family: Helvetica, Arial, sans-serif;
 }
-.main-container {
+main {
   display: grid;
   grid-template-columns: 4fr 1fr;
   margin-top: 2rem;
@@ -38,14 +38,14 @@ nav a {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 }
-.filters {
+aside {
   grid-column: 2;
   padding-top: 1rem;
   height: 95%;
   border: 2px solid #efc69b;
   margin-right: 2rem;
 }
-.filters p {
+aside p {
   font-size: 1.15rem;
   font-family: Arial, Helvetica, sans-serif;
 }
