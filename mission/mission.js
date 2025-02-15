@@ -1,16 +1,16 @@
-const themeSelector = document.getElementById('theme-selector');
+const themeSelector = document.getElementById("theme-selector");
 const body = document.body;
-const logo = document.querySelector('footer img');
+const logo = document.querySelector("footer img");
 
 function changeTheme() {
-    if (themeSelector.value === 'dark') {
-        body.classList.add('dark');
-        logo.src="byui-logo_white.png";
-    } else {
-        body.classList.remove('dark');
-        logo.src="byui-logo_blue.webp";
-    }
+  if (themeSelector.value === "dark") {
+    body.classList.add("dark");
+    logo.src = "byui-logo_white.png";
+  } else {
+    body.classList.remove("dark");
+    logo.src = "byui-logo_blue.webp";
+  }
 }
 
-themeSelector.addEventListener('change', changeTheme);
+themeSelector.addEventListener("change", changeTheme);
 changeTheme();

@@ -1,59 +1,59 @@
 body {
-    font-size:20px;
-    font-family:'Times New Roman', Times, serif;
-    align-items: left;
-    line-height: 1rem;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  align-items: left;
+  line-height: 1rem;
 }
 p {
-    text-align:left;
-    padding-top:.5rem;
+  text-align: left;
+  padding-top: 0.5rem;
 }
 ol li {
-    font-size:20px;
-    font-family:'Times New Roman', Times, serif;
-    padding-bottom:1rem;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 1rem;
 }
 * {
-    line-height:2rem;
+  line-height: 2rem;
 }
 h2 {
-    color:#006EB6;
+  color: #006eb6;
 }
 #content {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 img {
-    width:150px;
-    display:block;
-    margin: 0 auto;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 .title {
-    margin-top:5rem;
-    margin-bottom:2.5rem;
-    line-height: 1rem;
-    letter-spacing: 0.175rem;
-    text-align: center;
-    border-bottom: 1px solid lightgrey;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+  line-height: 1rem;
+  letter-spacing: 0.175rem;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
 }
 h2 {
-    font-size: smaller;
+  font-size: smaller;
 }
 .dark {
-    background-color: #333;
-    color:white;
+  background-color: #333;
+  color: white;
 }
 .dark h2 {
-    color: #85cefd;
+  color: #85cefd;
 }
 body.light {
-    background-color:white;
-    color:black;
+  background-color: white;
+  color: black;
 }
 .container {
-    border: 1px solid grey;
-    margin-left:25%;
-    margin-right:25%;
-    padding-top:1rem;
-    padding-bottom:5rem;
+  border: 1px solid grey;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }

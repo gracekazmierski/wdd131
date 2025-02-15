@@ -18,11 +18,16 @@
     "[less]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.formatOnSave": true,   // Auto-format on save
-    "prettier.printWidth": 100,    // Wrap lines at 100 characters
-    "prettier.tabWidth": 4,        // Use 4 spaces per tab
-    "prettier.useTabs": false,      // Use spaces instead of tabs
-    "prettier.trailingComma": "es5", // Add trailing commas where valid
-    "prettier.singleQuote": true,   // Use single quotes for consistency
-    "prettier.bracketSpacing": true // Add spaces inside object brackets
+    "editor.formatOnSave": true,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.trailingComma": "es5",
+    "prettier.singleQuote": true,
+    "prettier.bracketSpacing": true,
+
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 80,
+    "diffEditor.wordWrap": "on",
+    "debug.console.wordWrap": true
 }

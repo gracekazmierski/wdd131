@@ -12,7 +12,7 @@ function taskTemplate(task) {
 }
 
 function renderTasks(tasks) {
-  const listItem = document.querySelector('#todoList');
+  const listItem = document.querySelector("#todoList");
   listItem.innerHTML = ""; // clears existing tasks
   const html = tasks.map(taskTemplate).join(""); // generates HTML for tasks
   listItem.innerHTML = html; // inserts the generated HTML
@@ -27,16 +27,17 @@ function newTask() {
 
 function removeTask(taskElement) {
   tasks = tasks.filter(
-    (task) => task.detail !== taskElement.querySelector('p').innerText
+    (task) => task.detail !== taskElement.querySelector("p").innerText,
   );
   taskElement.remove(); // removes HTML
 }
 
 function completeTask(taskElement) {
-  const taskIndex = tasks.findIndex( // finds tasks
-    (task) => task.detail === taskElement.querySelector('p').innerText
+  const taskIndex = tasks.findIndex(
+    // finds tasks
+    (task) => task.detail === taskElement.querySelector("p").innerText,
   );
-  // toggles 'completed' 
+  // toggles 'completed'
   tasks[taskIndex].completed = !tasks[taskIndex].completed;
   taskElement.classList.toggle("strike"); // toggles 'strike'
 }
