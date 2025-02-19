@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Example credit card form" />
+        <meta name="author" content="Grace Kazmierski" />
+        <link rel="stylesheet" href="creditcard.css" />
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
+        <title>Credit Card</title>
+    </head>
+    <body>
+        <main>
+            <div id="card-front">
+                <div id="shadow"></div>
+                <span id="amount">TOTAL: $199</span>
+                <img class="card-image" src="download.svg" height="110px" />
+
+                <div id="cardnumber-container">
+                    <label for="card-number">CARD NUMBER</label><br />
+                    <input
+                        type="text"
+                        id="card-number"
+                        placeholder="1234 5678 9101 1020"
+                        maxlength="16"
+                    />
+                </div>
+
+                <div id="cardholder-container">
+                    <label for="card-holder">CARD HOLDER</label><br />
+                    <input type="text" id="card-holder" placeholder="John Doe" />
+                </div>
+
+                <div id="exp-container">
+                    <label for="card-exp"> EXPIRATION </label><br />
+                    <input id="card-month" type="text" placeholder="MM" maxlength="2" />
+                    <input id="card-year" type="text" placeholder="YY" maxlength="2" />
+                </div>
+            </div>
+
+            <div id="card-back">
+                <div id="cvc-container">
+                    <label for="card-cvc"> CVC/CVV</label>
+                    <input
+                        id="card-cvc"
+                        placeholder="XXX"
+                        type="text"
+                        minlength="3"
+                        maxlength="4"
+                    />
+                </div>
+                <div id="card-stripe"></div>
+            </div>
+
+            <button type="button" id="card-btn">Submit</button>
+        </main>
+    </body>
+</html>
