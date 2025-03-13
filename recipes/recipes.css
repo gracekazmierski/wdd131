@@ -11,8 +11,8 @@
 body {
     display: flex;
     flex-direction: column;
+    max-width: 960px !important;
     min-height: 100vh;
-    max-height:100vh;
 }
 p,
 a {
@@ -25,31 +25,33 @@ img {
 header {
     margin: 0 auto;
     border-bottom: 2px solid var(--text-light);
-    margin-bottom: 5vw;
+    margin-bottom: 20px;
     width: 100%;
 }
 #title {
     display: flex;
     justify-content: center;
-    font-size: 5vw;
-    margin-top: 10vw;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
 }
 header img {
-    width: 20vw;
+    width: 6rem;
     height: fit-content;
     grid-row: 1;
 }
 #search-form {
     display: flex;
     justify-content: center;
-    margin: 5vw 0vh 5vw 3vw;
-    height: 10vw;
+    margin: 20px 0 20px 10px;
+    height: 3.2rem;
 }
 #search-form button {
     border-radius: 0px 8px 8px 0px;
 }
 #search-form img {
-    width: 7vw;
+    width: 2.5rem;
 }
 #search-form input {
     width: 75%;
@@ -64,29 +66,35 @@ h2 {
 }
 #recipe-container {
     margin: auto;
-    margin: 4vw;
-    padding: 6vw;
+    margin-left: 25px;
+    margin-right:25px;
+    padding: 20px;
     border: 2px solid var(--text-dark);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#recipe-tag {
+ul {
+    list-style:none;
+    display:flex;
+    padding-left:0;
+}
+li {
     border: 1px solid var(--text-dark);
+    list-style: none;
     width: fit-content;
     padding: 7px;
-    font-size: 5vw;
-    margin: 5px 0 6vw 0;
+    font-size: 100%;
 }
-#recipe-container h2 {
+.recipe {
+    margin:0;
+}
+#recipe-container a {
+    text-decoration: none;
     color: var(--primary-color);
-    font-size: 6vw;
+    font-size: 100%;
     margin: 0;
-}
-.rating {
-    font-size: 5vw;
-    margin: 1vw 0vw 5vw 0vw;
 }
 footer {
     margin-top: auto;
@@ -95,11 +103,12 @@ footer {
     align-items: center;
 }
 footer img {
+    margin:30px 0 4px 0;
     justify-content: center;
-    width: 12vw;
+    width: 50px;
 }
 footer a {
-    font-size: 3.5vw;
+    font-size: 0.8rem;
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -114,60 +123,64 @@ footer a {
 }
 
 @media screen and (min-width: 600px) {
-    header {
-        margin-bottom: 2vw;
-    }
     #title {
-        font-size: 2vw;
+        font-size: 1.25rem;
     }
     #title img {
-        width: 8vw;
+        width: 5rem;
     }
     #search-form {
-        margin: 2vw 0vw 2vw 0vw;
-        height: 5vw;
+        margin: 10px 0 30px 0px;
+        height: 2.5rem;
     }
     #search-form input {
-        width: 83%;
+        width: 88%;
     }
     button {
-        width: 5%;
+        width: 2rem;
     }
     #search-form img {
-        width: 4vw;
+        width: 3rem;
     }
     #recipe-container {
-        width: 85%;
-        margin: 0 auto;
-        padding: 2vw;
-        flex-direction: row;
+        display: flex;
+        flex-direction: row; 
         justify-content: flex-start;
-        color: var(--text-dark);
+        align-items: flex-start; 
+        margin: 15px auto; 
+        margin-left:15px;
+        margin-right:15px;
+        padding: 30px;
+        border: 2px solid var(--text-dark);
+        border-radius: 10px;
+        max-width: 960px;
     }
-    #recipe-container img {
-        height: 100%;
-        width: 40vw;
-        max-width:50%;
-        margin: 0;
-        padding: 0;
-        padding-right: 20px;
+    figure {
+        display: flex;
     }
-    .content {
-        flex: 1;
+    .recipe img {
+        max-width: 55%;
+        height:auto;
+        object-fit: cover;
+        max-height:400px;
+        margin-right: 20px; 
     }
-    #recipe-tag {
-        font-size: 2vw;
+    #content {
+        flex: 1; 
+    }
+    li {
+        font-size: 1.25rem;
         margin: 0;
     }
     #recipe-container h2 {
-        padding-top: 2vw;
-        font-size: 2vw;
+        padding-top: 10px;
+        font-size: 1.5rem;
     }
-    .rating {
-        font-size: 1.75vw;
+    .recipe_ratings {
+        font-size: 200p;
     }
     #recipe-container p {
-        font-size: 1.5vw;
+        font-size: 1rem;
         color: var(--text-dark);
     }
     footer {
@@ -182,10 +195,10 @@ footer a {
         margin-right: auto;
     }
     footer a {
-        font-size: 1vw;
+        font-size: 0.6rem;
     }
     footer img {
-        width: 5vw;
+        width: 50px;
     }
     .social {
         display: flex;
@@ -196,11 +209,10 @@ footer a {
 @media screen and (min-width:960px) {
     body {
         max-width: 960px;
-        width: 100%;
         margin: 0 auto;
     }
     footer {
         margin: 40px auto;
     }
-
+    
 }
