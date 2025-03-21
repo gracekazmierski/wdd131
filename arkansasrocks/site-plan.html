@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <title>Site Plan</title>
+        <link type="text/css" rel="stylesheet" href="site-plan.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Arkansas Rocks Site Plan</h1>
+            <h2>Grace Kazmierski</h2>
+            <h2>WDD 131.A1</h2>
+            <!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+        </header>
+        <main>
+            <!-- ------------------------Steps 2-3------------------------------ -->
+            <hr />
+            <h2>Overview</h2>
+            <h3>Purpose</h3>
+            <p>
+                This website is the platform to play the game Arkansas Rocks, a game created by my
+                great-grandfather at a bar in Arkansas. The game is simiar to the game "Nim" and is
+                played with 15 rocks - 3 in the top row, 5 in the middle row, and 7 in the bottom
+                row. The game is played with two players. During their turn, a player can take as
+                many rocks as they want but can only take rocks from a single row. The player to
+                pick up the last rock loses. This website will allow players to learn the rules of
+                the game and play it virtually.
+            </p>
+            <!-- change this -->
+
+            <h3>Audience</h3>
+            <p>
+                My audience is anyone looking to play a simple game online with their friend. It
+                might be two bored students looking to pass time in class, or in my grandfather's
+                case, two guys with nothing better to do than play a simple game. Arkansas Rocks is
+                a similar challenge to four-in-a-row: it's a simple game with simple strategy.
+            </p>
+            <!-- change this -->
+
+            <h3>Dynamic elements</h3>
+            <p>
+                For the game function, I will need to dynamically generate each row of rocks and
+                display them as clickable elements. The player should be able to click rocks to
+                select them, and rock selection should be limited to one row per turn. When a player
+                confirms their move, selected rocks should hide.
+                <br />
+                I will also need to dynamically generate a message to display the winner of the
+                game. The message should be displayed in a modal that appears when the game is over.
+                The modal should have a button to close it and reset the game.
+                <br />
+                I will need to have an element that displays the current player's turn. This element
+                should update when the player makes a move.
+                <br />
+                There should also be game dynamics, such as highlighted rocks for selection,
+                animations for rock selection, alerts for invalid moves, and an alert when the game
+                ends.
+            </p>
+            <!-- change this -->
+
+            <hr />
+            <h2>Branding</h2>
+            <h3>Website Logo</h3>
+            <!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+            <img src="images/arkansas-rocks.png" alt="Logo image" width="800px"/>
+            <hr />
+            <h2>Style Guide</h2>
+
+            <!-- ------------------------Steps 4-8------------------------------ -->
+
+            <h3>Color Palette</h3>
+            <!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+            <!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+            Palette URL:
+            <a href="https://coolors.co/083d77-36311f-bf1a2f-c2c6a7-32373b" target="_blank"
+                >https://coolors.co/083d77-36311f-bf1a2f-c2c6a7-32373bc</a
+            >
+
+            <table class="colors">
+                <tbody>
+                    <tr>
+                        <th>Primary</th>
+                        <th>Secondary</th>
+                        <th>Accent 1</th>
+                        <th>Accent 2</th>
+                    </tr>
+                    <!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+                    <tr>
+                        <td class="primary">#36311F</td>
+                        <td class="secondary">#C2C6A7</td>
+                        <td class="accent1">#083D77</td>
+                        <td class="accent2">#BF1A2F</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- ------------------------Step 9------------------------------ -->
+
+            <h3>Typography</h3>
+            <!-- Choose a font for your paragraphs (body copy) and headlines. What font(s) have you chosen? Why did you choose what you did?  Make sure to review the list of web safe fonts at W3Schools.org as a starting point.  Think also about which of your colors above you might use for background and font colors. -->
+
+            <h4>
+                Heading Font: 'Trebuchet MS', sans-serif;
+                <!-- change this -->
+            </h4>
+            <h4>
+                Paragraph Font: Georgia, serif;
+                <!-- change this -->
+            </h4>
+            <h3>Normal paragraph example</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+            <h3>Colored paragraph example</h3>
+            <p class="colored">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <!-- ------------------------Step 10------------------------------ -->
+
+            <h3>Navigation</h3>
+            <!-- Think about how you want your navigation bar to look. In the site-plan.css file change the colors to your colors to get the look you desire. -->
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Page2</a>
+                <a href="#">Page3</a>
+            </nav>
+            <hr />
+
+            <h2>Content</h2>
+            <h3>Home page</h3>
+            <p>
+                The landing page will be a selection screen where players can chose to learn the
+                rules of the game, begin a game, or learn the history of the game. It will have a
+                player guide (Bob, a cowboy) that guides them through selection. It will also have a
+                header with the game title, and a footer with my information.
+            </p>
+            <h3>Instruction Page</h3>
+            <p>
+                Page two will be the instructions for the game. The instructions will be split up
+                into four slides and have a visual of the game board on the side. It will explain
+                the rules, player moves, and how to win the game.
+            </p>
+            <h3>Game Page</h3>
+            <p>
+                The game page will be where players can play the game. The fifteen rocks will be in
+                the center screen. Player icons will be on their respective sides of the screen
+                (player one on the left, player two on the right). The game will have a header with
+                the game title, a footer with my information, and a button to return to reset the
+                board. It will also have a help icon in the bottom right corner that will display
+                the instructions when clicked. The board background will visually represent a game
+                board.
+            </p>
+            <h3>Game History</h3>
+            <p>
+                The game history page will display a short summary of how the game was created. It
+                will have a button to return to the home screen, but otherwise will not be
+                interactive.
+            </p>
+            <h2>Wireframes</h2>
+            <p>Create two wireframes for your site. One for each page and list them here</p>
+
+            <h3>Home</h3>
+            <p>
+                This will be the landing page for the website. The header will contain the logo and
+                game title. The main text will be an introduction. Each of the three buttons will
+                navigate to another page, and the cowboy image will be the game guide.
+            </p>
+            <img src="wireframes/home-wireframe.png" alt="home page wireframe" />
+
+            <h3>Game</h3>
+            <p>
+                This will be where the player actually plays the game. Each of the 15 boxes
+                represent one rock. The player tags will alternate popping out to indicate which
+                player's turn it is. The help button in the corner will be a reminder of the
+                instructions.
+            </p>
+            <img src="wireframes/gameboard-wireframe.png" alt="page 2 wireframe" />
+
+            <h3>Instructions</h3>
+            <p>
+                This will be the official page for learning the instructions, guided by the cowboy
+                Bob. Each of the 15 boxes represent a rock to walk the players through a an example
+                game.
+            </p>
+            <img src="wireframes/instructions-wireframe.png" alt="page 2 wireframe" />
+        </main>
+    </body>
+</html>
