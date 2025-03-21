@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   margin-top: 2%;
   background-color: #e9f0f2;
+  height:100%;
   padding: 1rem;
   border-top: 1px solid #05403a;
 }
@@ -39,7 +40,7 @@ a {
   width: 75%;
 }
 .project {
-  height: 300px;
+  height: 100px;
   text-align: center;
   border: 1px solid #05403a;
   box-shadow: 5px 5px #05403a;
@@ -47,4 +48,7 @@ a {
 }
 .project a {
   color: #05403a;
+}
+h3 {
+  color: rgb(46, 91, 84);
 }
