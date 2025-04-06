@@ -56,7 +56,6 @@ import {
   }
   
   document.addEventListener("DOMContentLoaded", () => {
-    // Initialize first slide
     showSlide(currentSlide);
   
     const nextBtn = document.getElementById("next-button");
@@ -70,7 +69,6 @@ import {
       }
     });
   
-    // Rock logic
     const rows = [
       Array.from(document.querySelectorAll("#row1 .rock")),
       Array.from(document.querySelectorAll("#row2 .rock")),

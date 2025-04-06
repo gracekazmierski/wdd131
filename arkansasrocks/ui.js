@@ -11,10 +11,8 @@ export function updateUI(rows) {
   const icon1 = document.getElementById("icon1");
   const icon2 = document.getElementById("icon2");
 
-  // Get screen width
   const screenWidth = window.innerWidth;
 
-  // Adjust translate amount based on screen size with a max limit
   const baseTranslate = screenWidth <= 1024 ? screenWidth * 0.25 : screenWidth * 0.2;
   const translateAmount = Math.min(baseTranslate, 150);
 
