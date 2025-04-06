@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 :root {
   --text-color: #D9D9D9;
   --player-red: #b60101;
   --player-blue: #1b4d8f;
   --box-main: #1E2E3E;
-  --jacket-blue: #1e2e3e;
+  --jacket-color: #1E2E3E;
 }
 #container {
   display: grid;
@@ -52,7 +51,7 @@ header div {
   gap: 5px;
 }
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Arial', sans-serif;
   padding-top: 5px;
   margin: 0;
   font-size: 45px;
@@ -95,6 +94,7 @@ li a {
 }
 #logo {
   width: 6em;
+  height: auto;
 }
 #icon1 {
   grid-row:2;
@@ -118,6 +118,7 @@ li a {
 #icon1,
 #icon2 {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  height: auto;
 }
 .rock-icecap {
   background-image: url("images/icecap-rock.png");
@@ -130,6 +131,7 @@ li a {
     url("images/icecap-rock.png") type("image/png")
   );
 }
+
 .rock-purple {
   background-image: url("images/purple-rock.png");
   background-image: -webkit-image-set(
@@ -141,6 +143,7 @@ li a {
     url("images/purple-rock.png") type("image/png")
   );
 }
+
 .rock-orange {
   background-image: url("images/orange-rock.png");
   background-image: -webkit-image-set(
@@ -152,6 +155,7 @@ li a {
     url("images/orange-rock.png") type("image/png")
   );
 }
+
 .rock-iron {
   background-image: url("images/iron-rock.png");
   background-image: -webkit-image-set(
@@ -163,6 +167,7 @@ li a {
     url("images/iron-rock.png") type("image/png")
   );
 }
+
 .rock-magenta {
   background-image: url("images/magenta-rock.png");
   background-image: -webkit-image-set(
@@ -174,6 +179,7 @@ li a {
     url("images/magenta-rock.png") type("image/png")
   );
 }
+
 .rock-red {
   background-image: url("images/red-rock.png");
   background-image: -webkit-image-set(
@@ -185,6 +191,7 @@ li a {
     url("images/red-rock.png") type("image/png")
   );
 }
+
 .rock-striped {
   background-image: url("images/striped-rock.png");
   background-image: -webkit-image-set(
@@ -196,6 +203,7 @@ li a {
     url("images/striped-rock.png") type("image/png")
   );
 }
+
 .rock-lilac {
   background-image: url("images/lilac-rock.png");
   background-image: -webkit-image-set(
@@ -207,6 +215,7 @@ li a {
     url("images/lilac-rock.png") type("image/png")
   );
 }
+
 .rock-mango {
   background-image: url("images/mango-rock.png");
   background-image: -webkit-image-set(
@@ -331,14 +340,21 @@ footer p {
     margin:0 auto;
   }
   header {
+    display:grid;
+    grid-template-columns:0.5fr 0.5fr;
+    grid-template-rows:auto;
     margin: 10px auto;
-    width: 90%;
     justify-content: center;
-    align-items: center;
+    width: 90%;
     grid-column: 2;
     height:fit-content;
     padding:1vw;
     margin-bottom:5vw;
+  }
+  h1 {
+    font-size:5vw;
+    margin:0 auto;
+    text-align: center;
   }
   nav ul {
     flex-direction: row;
@@ -355,12 +371,9 @@ footer p {
     font-size:3vw;
     text-align: center;
   }
-  h1 {
-    font-size:10vw;
-    text-align: center;
-  }
   #logo {
-    width: 22.5%;
+    width:16vw;
+    height:auto;
   }
   #sidebar {
     display:none;
@@ -389,7 +402,7 @@ footer p {
     padding:10px;
     border-radius: 5px;
     color:var(--text-color);
-    font-family: 'Bebas Neue', sans-serif; 
+    font-family: 'Georgia', sans-serif; 
     font-size:5vw;
     letter-spacing: 2px;
   }
